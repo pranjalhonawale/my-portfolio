@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script>
+      (function() {
+        emailjs.init("YOUR_USER_ID");
+      })();
+    </script> -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Pranjal Honawale</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience-page">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pranjal Honawale</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience-page" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/assets/profile-pic3.png" alt="Pranjal profile pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pranjal Honawale</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+          <div id="socials-container">
+            <img
+              src="./assets/assets/linkedin1.png"
+              alt="My Linkedin"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/pranjal-honawale-2808p/'"
+            />
+            <img
+              src="./assets/assets/github1.png"
+              alt="My Github Profile"
+              class="icon"
+              onclick="location.href='https://github.com/pranjalhonawale'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Education</h3>
+              <button class="collapsible">
+                Bachelor of Engineering (Information Technology)
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                <p>PES Modern College Of Engineering, Pune</p>
+                <p>2019-2023</p>
+                <p>8.61/10 CGPA</p>
+              </div>
+    
+              <button class="collapsible">
+                Higher Secondary School
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                <p>Mahatma Gandhi Vidyalaya & Jr. College, Rajgurunagar</p>
+                <p>2019</p>
+                <p>Score: 74.31%</p>
+              </div>
+    
+              <button class="collapsible">
+                Secondary School Certificate
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                <p>Mahatma Gandhi Vidyalaya, Rajgurunagar</p>
+                <p>2017</p>
+                <p>Score: 89.00%</p>
+              </div>
+            </div>
+    
+            <div class="details-container">
+              <h3>Skills</h3>
+    
+              <button class="collapsible">
+                Core
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>Data Structure</p>
+                  <p>Object Oriented Programming</p>
+                  <p>Operating system</p>
+                  <p>Database Management System</p>
+                
+              </div>
+    
+              <button class="collapsible">
+                Programming Languages
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>Python</p>
+                  <p>Java</p>
+                
+              </div>
+    
+              <button class="collapsible">
+                Web Technologies
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
+                
+              </div>
+    
+              <button class="collapsible">
+                Frameworks
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>Bootstrap</p>
+                  <p>React</p>
+                
+              </div>
+    
+              <button class="collapsible">
+                Database
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>MySQL</p>
+                
+              </div>
+    
+              <button class="collapsible">
+                Developer Tools
+                <span class="dropdown-icon">&#9660;</span>
+              </button>
+              <div class="content">
+                
+                  <p>Github</p>
+                  <p>Figma</p>
+                  <p>VS Code</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <style>
+      .dropdown-icon {
+        margin-left: 5px; /* Adjust spacing between text and icon */
+      }
+    </style>
+    
+<script>
+  // JavaScript for collapsible sections
+  const coll = document.getElementsByClassName("collapsible");
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+    <!-- Experience Section -->
+    <section id="experience-page">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience">
+          <h2>Experience 1</h2>
+          <div class="role-name">Role Name: Developer</div>
+          <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Java</div>
+              <div class="skill">Bootstrap</div>
+              <div class="skill">SQL</div>
+          </div>
+      </div>
+
+      <div class="experience">
+          <h2>Experience 2</h2>
+          <div class="role-name">Role Name: Designer</div>
+          <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Java</div>
+              <div class="skill">Bootstrap</div>
+              <div class="skill">SQL</div>
+          </div>
+      </div>
+  </section>
+
+    <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cognizant Technology Solutions Corp.</h2>
+            <h3>CSD Stage 1 Intern (2024)</h3>
+            <div class="article-container">
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Core JAVA</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>OOP</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tathastu (TwoWaits) </h2> 
+            <h3>Web Development Intern (2021)</h3>
+            <div class="article-container">
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article> -->
+              <!-- <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/assets/checkmark.png" alt="experience" class="icon" />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section> -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/assets/project-pic1.jpg" alt="project-1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Recipe Finder</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Code</button>
+              <button style="margin-top: 0.75rem;" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/assets/project-2.jpg" alt="project-2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Quiz App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Code</button>
+              <button style="margin-top: 0.75rem;" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/assets/project-3.jpg" alt="project-1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Rental Management System</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Code</button>
+              <button style="margin-top: 0.75rem;" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/assets/project-4.jpg" alt="project-1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Placement Management system</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Code</button>
+              <button style="margin-top: 0.75rem;" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <p class="section__text__p1">My Achievements</p>
+      <h1 class="title">Certificates</h1>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="./assets/assets/certificate1.jpg" alt="Certificate 1" /></div>
+          <div class="slide"><img src="./assets/assets/certificate2.jpg" alt="Certificate 2" /></div>
+          <div class="slide"><img src="./assets/assets/certificate3.jpg" alt="Certificate 3" /></div>
+          <div class="slide"><img src="./assets/assets/certificate4.jpg" alt="Certificate 4" /></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-form-container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <div class="form-group">
+            <input type="hidden" name="access_key" value="b24360d7-1f7f-492f-adf1-5675a288daa9">
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Full name should only contain letters and spaces" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Mobile number should only contain digits" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="response" style="display: none;">
+          <p id="success-message" style="color: green;">Message sent successfully! Thank you for reaching out.</p>
+      </div>
+      </div>
+    </section>
+    <script>
+    document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      var nameInput = document.getElementById("name").value;
+      var namePattern = /^[A-Za-z\s]+$/;
+  
+      if (!namePattern.test(nameInput)) {
+        document.getElementById("response").innerText =
+          "Full name should only contain letters and spaces.";
+        return;
+      }
+  
+      var form = event.target;
+      var formData = new FormData(form);
+  
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Hide the form and display success message
+            form.reset();
+            document.getElementById("contact-form").style.display = "none";
+            document.getElementById("response").style.display = "block";
+            document.getElementById("success-message").innerText =
+              "Message sent successfully! Thank you for reaching out.";
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, "errors")) {
+                document.getElementById("response").innerText = data["errors"]
+                  .map((error) => error["message"])
+                  .join(", ");
+              } else {
+                document.getElementById("response").innerText =
+                  "An error occurred. Please try again.";
+              }
+            });
+            document.getElementById("response").style.display = "block";
+          }
+        })
+        .catch((error) => {
+          document.getElementById("response").innerText =
+            "An error occurred. Please try again.";
+          document.getElementById("response").style.display = "block";
+        });
+    });
+  </script>
+    
+    
+    <script>
+      let slideIndex = 0;
+      showSlides(slideIndex);
+    
+      function moveSlide(n) {
+        showSlides(slideIndex += n);
+      }
+    
+      function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) { slideIndex = 0; }
+        if (n < 0) { slideIndex = slides.length - 1; }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
+    </script>
+    
+    <!-- <footer>
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer> -->
+
+    </script>
+  </body>
+</html>
